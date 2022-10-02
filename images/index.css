@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Inter:wght@100;200;300;400&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100&family=Lexend+Deca:wght@100;200;300;400&family=Lobster&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Outfit:wght@100;200;300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700&family=Raleway:ital,wght@0,300;0,400;0,700;0,800;0,900;1,300;1,400;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;1,100;1,300&display=swap');
+/* default setting with '*' global selector*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'lato', sans-serif;
+    background:#FFFFFF;
+    user-select: none;
+}
+header{
+    background: url(./james-barr-zy5JTdcC0fE-unsplash\ 1.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+nav{
+    position: fixed;
+    top: .5em;
+    width: 100%;
+    z-index: 33;
+}
+ul{
+    width: 90%;
+    margin: 0 auto;
+    padding-right: .5em;
+    padding-bottom: .5em;
+    border-radius: 0 0 10px 10px;
+    background-color: #FFFFFF;
+}
+header .menu{
+    display: none;
+    background-color: #FFFFFF;
+}
+button, li, .social, footer img, a, .btn{
+    cursor: pointer;
+}
+.container{
+    padding-inline-start: 6.5%;
+    padding-inline-end: 6.5%;
+}
+section.container{
+    margin-block: 1em;
+}
+header main{
+    color: #404040;
+    display: flex;
+    flex-direction:column;
+    gap: 0.5em;
+    justify-content: flex-start;
+}
+a{
+    text-decoration: none;
+    color: #A6A6A6;
+    font-size: 1rem;
+}
+a:hover{
+    color: #404040;
+}
+header ul{
+    display: flex;
+    justify-content: flex-end;
+}
+header a[href="#home"]{
+    color: #404040;
+}
+header li {
+    padding-block-start:1em;
+    list-style: none;
+    text-transform: capitalize;
+    font-family: 'lato';
+    color:#A6A6A6;
+    font-weight: 400;
+}
+header h1{
+    font-family: 'lato';
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1em;  
+}
+header p{
+    font-family: 'lato';
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1em;
+}
+header button, .btn{
+    font-family: 'lato';
+    font-weight: 400;
+    font-size: 1.2rem;
+    background-color: inherit;
+    width: 9em;
+    height: 3em;
+    color: #404040;
+    border: .05em solid #404040;
+}
+.social{
+    display: grid;
+    justify-content: flex-end;
+    gap: .5em;
+    padding-block-end: 2.5em;
+}
+section.intro{
+    display: flex;
+    font-family: 'lato';
+    gap: 1.5em;
+    margin-block-start: 2.5em;
+}
+.intro p + p{
+    margin-top: 1em;
+}
+.hero-message p{
+    line-height: 1.6em;
+    color: #404040;
+    font-size: .86rem;
+    font-weight: 400;
+}
+.hero-message h2, .gallery-text h2{
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+.gallery-text{
+    text-align: center;
+    font-family: 'lato';
+    color: #404040;
+    margin-block-end: 1em;
+}
+.gallery-text p{
+    font-size: .9rem;
+    font-weight: 400;
+}
+/* gallery section*/
+.slider{
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.slider img{
+    width: 100%;
+}
+/* contact section */
+.form-sec{
+    display: flex;
+    justify-content: space-between;
+}
+.showcase .btn{
+    margin-block-start: 1em;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+    margin: 0 auto;
+}
+section .clients-text{
+    font-family: 'lato';
+    text-align: center;
+    line-height: 1.3em;
+}
+section .logo{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+.logo img{
+    width: 25%;
+}
+.form-sec, .showcase{
+    margin-block-end: 1em;
+}
+form label{
+    font-family: 'lato';
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+form input{
+    width: 100%;
+    height: 4em;
+    border: 1px solid #404040;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding-left: .5em;
+    caret-color: skyblue;
+}
+form textarea{
+    width: 100%;
+    padding-left: .5em;
+    padding-top: .9em;
+    height: 8em;
+    border: 1px solid #404040;
+    border-radius: 5px;
+}
+.contact .clients-text{
+    margin-block:40px 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+form{
+    width: 50%;
+}
+.form-sec img{
+    width: 40%;
+}
+footer p{
+    font-family: 'lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-bottom: .5em;
+    color: #404040;
+}
+footer{
+    text-align: center;
+    margin-block-end: 1em;
+}
+footer .footer-social{
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+@media screen and  (max-width:45em) {
+    /* font size is set to be 18px on mobile width <=45em*/
+    html{
+        font-size: 18px;
+    }
+    /* header section style on max-width:45em */
+    header{
+    background: url(.//james-barr-zy5JTdcC0fE-unsplash\ 2.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-block-end: 4em;
+    }
+    /*hamburger icon set to be display (vissible)*/
+    header .menu{
+        display: grid;
+    }
+    main button, header .social{
+        display: none;
+    }
+    /* nav bar css style */
+    nav{
+        /* To appear on all part of the web page that has lesser z-index*/
+        z-index: 1;
+    }
+    ul{
+        gap: .4em;
+        background-color:#FFFFFF;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        opacity: 0;
+        transform: translateY(-500px);
+        transition: 400ms linear;
+    }
+    .open{
+        opacity: 1;
+        transition: 400ms linear;
+        transform: translateY(0px);
+    }
+    ul{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu i{
+        transition: 400ms linear;
+    }
+    .xmenu i{
+        transition: 400ms linear;
+        transform: rotate(360deg);
+    }
+    .menu{
+        display: grid;
+        place-content: center;
+        width: 40px;
+        background-color: #FFFFFF;
+        height: 40px;
+        border: 1px solid #A6A6A6;
+        color: #201f1f;
+        font-size: 22px;
+        background-color: inherit;
+        margin: 1% 0 0 1%;
+    }
+    header main{
+    color: #f2f2f2;
+    width: 100%;
+    padding-block-start: 700px;
+    padding-bottom: 50px;
+    }
+    /*form style*/
+    section .form-sec{
+        display: block;
+    }
+    .form-sec{
+        /*form  section with the above class name is giving a width of 90% of its
+        container and is set to align center of the container making the both 
+        sides of .form-sec to have 5% space each*/
+        width: 90%;
+        margin: 0 auto;
+    }
+    .form-sec img{
+        width: 100%;
+    }
+    section.contact .btn{
+        margin-left: 5%;
+    }
+    form div{
+        margin-block: 0.5em;
+    }
+    /*AboutMe section*/
+    section.intro{
+        /*position relative is used to make the header of the container
+        appear at the top of about me container*/
+        display: block;
+        position: relative;
+    }
+    .intro img{
+        width: 50%;
+        /*float is used to give the texts content around the image the
+        ability to filled up the available space around the imge*/
+        float: left;
+        margin-right: 20px;
+    }
+    .intro .hero-message{
+        text-align: justify;
+    }
+    .hero-message h2{
+        position: absolute;
+        top: -50px;
+        left: 35%;
+    }
+    /*gallery*/
+    .showcase.container{   
+        padding: 0;
+    }
+    section.showcase{
+        margin: 0 auto;
+    }
+    section form{
+        width: 100%;
+    }
+    /*showcase animation on mobile view (screen)*/
+    .slider{
+    width: 100%;
+    max-width: 400px;
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: repeat(6, 1fr);
+    animation: slide 30s ease-in infinite;
+    position: relative;
+    }
+    .showcase.container{
+        width: 400px;
+        overflow: hidden;
+    }
+    .slider img{
+        width: 400px;
+    }
+    @keyframes slide {
+        0%{
+            left: 0px;
+        }  
+        9%{
+            left: 0px;
+        }
+        19%{
+            left: -400px;
+        }
+        28%{
+            left: -400px;
+        }
+        37%{
+            left: -800px;
+        }
+        46%{
+            left: -800px;
+        }
+        55%{
+            left: -1200px;
+        }
+        64%{
+            left: -1200px;
+        }
+        73%{
+            left: -1600px;
+        }
+        82%{
+            left: -1600px;
+        }
+        91%{
+            left: -2000px;
+        }
+        100%{
+            left: -2000px;
+        }
+    }
+    .showcase .btn{
+        display: none;
+    }
+}
+@media screen and (min-width:45em) and (max-width:60em){
+    /* font size is set to be 19px on tab with width > 45em && width > 60em*/
+    html{
+        font-size: 19px;
+    }
+    header main{
+        width: 50%;
+        color: #201f1f;
+        padding-block-start: 15em;
+        padding-block-end: 2em;
+    }
+    header .social {
+        display: none;
+    }
+    .intro img{
+        width: 50%;
+        float: left;
+        margin-right: 20px;
+    }
+    .intro .hero-message{
+        text-align: justify;
+    }
+    section.intro{
+        display: block;
+    }     
+    header ul{
+        gap: 1.9em;
+    } 
+}  
+@media screen and (min-width:60em) {
+    /* font size is set to be 20px on pc screen with width > 60em*/
+    html{
+        font-size: 20px;
+    }
+    header ul{
+        gap: 1.9em;
+    }
+    header main{
+        width: 48%;
+        padding-block-start: 15em;
+    }
+}
