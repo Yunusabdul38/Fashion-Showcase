@@ -9,6 +9,7 @@ body{
     font-family: 'lato', sans-serif;
     background:#FFFFFF;
     user-select: none;
+     width: 100%;
     overflow-x: hidden;
 }
 header{
