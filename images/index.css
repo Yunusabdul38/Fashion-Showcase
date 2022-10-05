@@ -4,12 +4,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 body{
     font-family: 'lato', sans-serif;
     background:#FFFFFF;
     user-select: none;
+    overflow-x: hidden;
 }
 header{
     background: url(./james-barr-zy5JTdcC0fE-unsplash\ 1.jpg) no-repeat;
