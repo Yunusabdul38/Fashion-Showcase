@@ -355,7 +355,7 @@ footer .footer-social{
     position: relative;
     }
     .showcase.container{
-        width: 400px;
+        width: 100%;
         overflow: hidden;
     }
     .slider img{
